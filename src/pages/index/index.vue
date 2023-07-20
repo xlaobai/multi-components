@@ -4,13 +4,14 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
-    <layout></layout>
+    <Layout></Layout>
 </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { layout } from "../../../npmBuild/dist/index.es.js";
+// import { Layout } from "../../../npmBuild/dist/index.es.js";
+import Layout from "../../components/layout.vue";
 const title = ref('Hello')
 </script>
 

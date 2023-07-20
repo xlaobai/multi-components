@@ -1,13 +1,14 @@
 {
   "name": "live-multi-components",
   "version": "0.0.1",
-  "main": "npmBuild/dist/index.js",
+  "main": "npmBuild/dist/index.es.js",
   "scripts": {
     "dev:h5": "uni -c build/vite.config.ts",
     "dev:mp-weixin": "uni -c build/vite.config.ts -p mp-weixin",
     "build:h5": "uni build -c build/vite.config.ts",
     "build:mp-weixin": "uni build -c build/vite.config.ts -p mp-weixin",
-    "custom:npm": "node npmBuild/build/index.js",
+    "custom:npm": "node npmBuild/build/npm.js",
+    "custom:npmPublic": "node npmBuild/build/npmPublic.js",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
@@ -15,15 +16,7 @@
     "@dcloudio/uni-app-plus": "3.0.0-3080720230703001",
     "@dcloudio/uni-components": "3.0.0-3080720230703001",
     "@dcloudio/uni-h5": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-alipay": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-baidu": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-jd": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-kuaishou": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-lark": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-qq": "3.0.0-3080720230703001",
-    "@dcloudio/uni-mp-toutiao": "3.0.0-3080720230703001",
     "@dcloudio/uni-mp-weixin": "3.0.0-3080720230703001",
-    "@dcloudio/uni-quickapp-webview": "3.0.0-3080720230703001",
     "vue": "^3.2.45",
     "vue-demi": "^0.14.5",
     "vue-i18n": "^9.1.9"

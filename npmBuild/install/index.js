@@ -13,6 +13,10 @@ export const install = (Vue, options = {}) => {
     })
 }
 
+export {
+    Layout
+}
+
 export default {
     Layout
 }
