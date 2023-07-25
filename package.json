@@ -1,5 +1,5 @@
 {
-  "name": "live-multi-components",
+  "name": "multi-components",
   "version": "0.0.1",
   "main": "npmBuild/dist/index.es.js",
   "scripts": {
@@ -10,6 +10,15 @@
     "custom:npm": "node npmBuild/build/npm.js",
     "custom:npmPublic": "node npmBuild/build/npmPublic.js",
     "type-check": "vue-tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlaobai/multi-components"
+  },
+  "author": "xlaobailu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xlaobai/multi-components/issues"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3080720230703001",
