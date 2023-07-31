@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <!-- <image class="logo" src="/static/logo.png" /> -->
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
@@ -10,7 +10,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-// import { Layout } from "../../../npmBuild/dist/index.es.js";
 import Layout from "../../components/layout.vue";
 const title = ref('Hello')
 </script>
